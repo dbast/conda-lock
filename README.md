@@ -63,6 +63,7 @@ you can still get that behaviour by making use of the `explicit` output kind.
 conda-lock --kind explicit -f environment.yml
 ```
 
+
 ## Advanced usage
 
 ### File naming
