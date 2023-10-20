@@ -22,7 +22,7 @@ jobs:
       FORCE_COLOR: "1"
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: conda-incubator/setup-miniconda@v2
         with:
           python-version: ${{ matrix.python-version }}
@@ -68,7 +68,7 @@ jobs:
       PYTHONUNBUFFERED: "1"
       FORCE_COLOR: "1"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: conda-incubator/setup-miniconda@v2
         with:
