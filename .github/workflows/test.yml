@@ -52,7 +52,7 @@ jobs:
           dir
           pytest tests
           copy coverage.xml %GITHUB_WORKSPACE%
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v5
 
   test:
     runs-on: ${{ matrix.os }}
@@ -108,7 +108,7 @@ jobs:
           which pytest
           pytest tests
           cp coverage.xml "${GITHUB_WORKSPACE}"
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v5
 
       - name: test-gdal
         shell: bash -l {0}
